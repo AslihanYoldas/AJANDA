@@ -1,0 +1,131 @@
+#Bu dosya "Qt Designer" 'da tasarladigimiz arayuzlerin .py uzantili dosyasidir.
+#Arayuzleri donustururken "design2pyconverter" uygulamasini kullandik.
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(771, 600)
+        MainWindow.setMinimumSize(QtCore.QSize(771, 600))
+        MainWindow.setMaximumSize(QtCore.QSize(771, 619))
+        MainWindow.setAutoFillBackground(False)
+        MainWindow.setStyleSheet("")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("#centralwidget{\n"
+"background-color:rgb(217, 239, 255);\n"
+"}")
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(80, 160, 616, 211))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 0, 3, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem1, 1, 3, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Light")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(3)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background-color:rgb(217, 239, 255);\n"
+"font: 25 20pt \"Segoe UI Light\";")
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 1, 1, 1, 1)
+        self.girilen_sifre = QtWidgets.QLineEdit(self.gridLayoutWidget)
+        self.girilen_sifre.setMinimumSize(QtCore.QSize(230, 51))
+        self.girilen_sifre.setMaximumSize(QtCore.QSize(230, 51))
+        self.girilen_sifre.setStyleSheet("background-color:rgb(217, 239, 255);\n"
+"font: 25 20pt \"Segoe UI Light\";\n"
+"")
+        self.girilen_sifre.setMaxLength(8)
+        self.girilen_sifre.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.girilen_sifre.setClearButtonEnabled(True)
+        self.girilen_sifre.setObjectName("girilen_sifre")
+        self.gridLayout.addWidget(self.girilen_sifre, 1, 2, 1, 1)
+        self.label = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Light")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(3)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:rgb(217, 239, 255);\n"
+"font: 25 20pt \"Segoe UI Light\";\n"
+"")
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 1, 1, 1)
+        self.girilen_kullanici_adi = QtWidgets.QLineEdit(self.gridLayoutWidget)
+        self.girilen_kullanici_adi.setMinimumSize(QtCore.QSize(230, 51))
+        self.girilen_kullanici_adi.setMaximumSize(QtCore.QSize(230, 51))
+        self.girilen_kullanici_adi.setStyleSheet("background-color:rgb(217, 239, 255);\n"
+"font: 25 20pt \"Segoe UI Light\";\n"
+"")
+        self.girilen_kullanici_adi.setClearButtonEnabled(True)
+        self.girilen_kullanici_adi.setObjectName("girilen_kullanici_adi")
+        self.gridLayout.addWidget(self.girilen_kullanici_adi, 0, 2, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem2, 0, 0, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem3, 1, 0, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(260, 50, 281, 81))
+        font = QtGui.QFont()
+        font.setFamily("NSimSun")
+        font.setPointSize(48)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("background-color:rgb(217, 239, 255);\n"
+"font: 48pt \"NSimSun\";\n"
+"\n"
+"")
+        self.label_3.setObjectName("label_3")
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(410, 400, 211, 125))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.buton_sifremi_unuttum = QtWidgets.QCommandLinkButton(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(13)
+        self.buton_sifremi_unuttum.setFont(font)
+        self.buton_sifremi_unuttum.setObjectName("buton_sifremi_unuttum")
+        self.verticalLayout.addWidget(self.buton_sifremi_unuttum)
+        self.buton_giris = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Light")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.buton_giris.setFont(font)
+        self.buton_giris.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.buton_giris.setStyleSheet("border-style: outset;\n"
+"border-color: white;\n"
+"border-width:2px;")
+        self.buton_giris.setObjectName("buton_giris")
+        self.verticalLayout.addWidget(self.buton_giris)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_2.setText(_translate("MainWindow", "SIFRE:"))
+        self.label.setText(_translate("MainWindow", "KULLANICI ADI:"))
+        self.label_3.setText(_translate("MainWindow", "AJANDA"))
+        self.buton_sifremi_unuttum.setText(_translate("MainWindow", "Sifremi Unuttum"))
+        self.buton_giris.setText(_translate("MainWindow", "GIRIS"))
+

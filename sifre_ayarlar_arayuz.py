@@ -105,6 +105,24 @@ class Ui_MainWindow(object):
         self.verticalLayout.addLayout(self.gridLayout)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
+        self.buton_geri = QtWidgets.QPushButton(self.centralwidget)
+        self.buton_geri.setMinimumSize(QtCore.QSize(100, 50))
+        self.buton_geri.setMaximumSize(QtCore.QSize(100, 50))
+        font = QtGui.QFont()
+        font.setFamily("NSimSun")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.buton_geri.setFont(font)
+        self.buton_geri.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.buton_geri.setStyleSheet("color:white;\n"
+"font: 14pt \"NSimSun\";\n"
+"border-style: outset;\n"
+"border-color: white;\n"
+"border-width:2px;")
+        self.buton_geri.setObjectName("buton_geri")
+        self.horizontalLayout.addWidget(self.buton_geri)
         spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem6)
         self.buton_sifre_degistir = QtWidgets.QPushButton(self.centralwidget)
@@ -134,8 +152,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "Eski Şifre:"))
-        self.label_2.setText(_translate("MainWindow", "Yeni Şifre:"))
-        self.label_3.setText(_translate("MainWindow", "Kullanıcı adı:"))
-        self.buton_sifre_degistir.setText(_translate("MainWindow", "Şifre Değiştir"))
+        self.label.setText(_translate("MainWindow", "Eski Sifre:"))
+        self.label_2.setText(_translate("MainWindow", "Yeni Sifre:"))
+        self.label_3.setText(_translate("MainWindow", "Kullanici adi:"))
+        self.buton_geri.setText(_translate("MainWindow", "GERI"))
+        self.buton_sifre_degistir.setText(_translate("MainWindow", "Sifre Degistir"))
 

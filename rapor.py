@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMainWindow,QWidget,QGridLayout,QApplication
+from PyQt5.QtWidgets import QMainWindow,QWidget,QGridLayout
 import pyqtgraph as pg
 import pandas as pd
 import dosya_islemleri as d_i
@@ -20,7 +20,7 @@ class Rapor(QMainWindow):
         widget = QWidget()
         plot = pg.plot()
         hafta_sayisi=d_i.dosya_oku("hafta_numarasi.txt")
-        hafta_sayisi=int(hafta_sayisi)
+        hafta_sayisi=int(hafta_sayisi)-1
         data=pd.read_csv(d_i.Path("veriler.csv"),sep=';',names=["Pzt","Salı","Çrş","Prş","Cuma","Cmrts","Pazar"])
         x=[1,2,3,4,5,6,7]
         y=data.loc[hafta_sayisi].values
@@ -34,3 +34,4 @@ class Rapor(QMainWindow):
         widget.setLayout(layout)
         layout.addWidget(plot)
         self.setCentralWidget(widget)
+  

@@ -9,17 +9,16 @@ import sqlite3
 import veri_islemleri
 
 class Calisma_sayfasi(QMainWindow,calisma_sayfasi):
-    """Calisma sayfasindaki haftalik program ,zamanlayici, yapilacaklar listesinin calismasini saglayan sinif"""
     def __init__(self):
         """Arayuzu olusturuyoruz.Butonlari etkinlestiriyoruz.Zamanlayiciyi sifirliyoruz.100 milisaniyede bir geri_sayim fonksiyonunu cagriyoruz
         Sinif degiskenlerine ilk degerlerini atiyoruz"""
         super(Calisma_sayfasi,self).__init__()
-        self.calisma=0#calisma suresi
-        self.ara=0#ara suresi
-        self.toplam_sure_calisma=0#calisma suresi saniye olarak
-        self.toplam_sure_ara=0#ara suresi saniye olarak
-        self.say=False#Zamanlayici calisiyor mu
-        self.devam=False#Zamanlayici ilk mi baslatildi durdurup mu baslatildi bilgisini tutuyor.
+        self.calisma=0#çalışma süresi
+        self.ara=0#ara süresi
+        self.toplam_sure_calisma=0#çalışma süresi saniye olarak
+        self.toplam_sure_ara=0#ara süresi saniye olarak
+        self.say=False#Zamanlayıcı çalışıyor mu
+        self.devam=False#Zamanlayıcı ilk mi başlatıldı durdurup mu başlatıldı bilgisini tutuyor.
         self.baglanti = None
         self.imlec = None
         self.tablo_adi = None
